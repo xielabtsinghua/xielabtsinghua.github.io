@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="intranet, Xie Lab; Tinghua University">
-    <meta name="description" content="intranet | Xie Lab">
+    <meta name="keywords" content="protocol to maintain this website, Xie Lab; Tinghua University">
+    <meta name="description" content="protocol to maintain this website | Xie Lab">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>intranet | Xie Lab</title>
+    <title>protocol to maintain this website | Xie Lab</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -284,7 +284,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '4f5c4f2a6e6c309a6e8aacf329d05ecf9cf8d84a97eab16bd792566924f4e5ac';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('输入密码——非实验室人员无法访问，请向管理员索要密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -297,13 +297,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        intranet
+                        protocol to maintain this website
                     </div>
                 </div>
             </div>
@@ -448,7 +448,102 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a href="./calendar">Calendar</a><br><a href="./protocol">Protocol</a></p>
+                <blockquote>
+<p>网页状况简介：</p>
+<p>整体方案是hexo + github + 个人域名转发</p>
+</blockquote>
+<h1 id="Hexo-环境的配置"><a href="#Hexo-环境的配置" class="headerlink" title="Hexo 环境的配置"></a>Hexo 环境的配置</h1><p><a href="https://hermanzhaozzzz.github.io/2019/09/17/Hexoblog/配置-hexo-博客/" target="_blank" rel="noopener">参考我的博客</a></p>
+<p>本教程是在mac环境下写的：</p>
+<p>按照博客中的方法配置好npm和hexo</p>
+<p>可以尝试自己搭建一个blog试试水。</p>
+<p>在没有配置域名的情况下，xielab.org.cn的访问方式如下</p>
+<p><a href="https://xielabtsinghua.github.io">https://xielabtsinghua.github.io</a></p>
+<p>我配置了xielab.org.cn 解析到 xielabtsinghua.github.io</p>
+<p>之后就可以使用xielab.org.cn访问实验室网站了</p>
+<h1 id="如何管理和编辑xielab-org-cn"><a href="#如何管理和编辑xielab-org-cn" class="headerlink" title="如何管理和编辑xielab.org.cn"></a>如何管理和编辑xielab.org.cn</h1><h2 id="step0-权限"><a href="#step0-权限" class="headerlink" title="step0 权限"></a>step0 权限</h2><p>需要向我索要管理员权限，即将你的github账号和用户名发给我，得到contributor权限后进行下一步。</p>
+<h2 id="step1-将网站源代码文件下载到本地"><a href="#step1-将网站源代码文件下载到本地" class="headerlink" title="step1 将网站源代码文件下载到本地"></a>step1 将网站源代码文件下载到本地</h2><p>找一个电脑本地合适的位置：</p>
+<h2 id="git-pull-quot-git-github-com-xielabtsinghua-xielabweb-file-git-quot"><a href="#git-pull-quot-git-github-com-xielabtsinghua-xielabweb-file-git-quot" class="headerlink" title="git pull &quot;git@github.com:xielabtsinghua/xielabweb_file.git&quot;"></a><code>git pull &quot;git@github.com:xielabtsinghua/xielabweb_file.git&quot;</code></h2><p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9bljy32ktj30vg07g0uk.jpg" alt></p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd xielabweb_file</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>然后即可打卡浏览器查看本地网页，默认打开的是本地ip的4000端口</p>
+<p><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
+<h2 id="step2-一个注意事项"><a href="#step2-一个注意事项" class="headerlink" title="step2 一个注意事项"></a>step2 一个注意事项</h2><p>挺重要的！</p>
+<p>每次编辑源文件之前务必做好备份</p>
+<p><code>cp -r xielabweb_file xielabweb_bk</code></p>
+<p>万一乱搞搞崩了恢复一下文件即可</p>
+<h2 id="step3-更改标签页的内容，如member"><a href="#step3-更改标签页的内容，如member" class="headerlink" title="step3 更改标签页的内容，如member"></a>step3 更改标签页的内容，如member</h2><p>示例：</p>
+<p>需求，给member page添加一位新成员，该成员是rotation student</p>
+<p>！在进行下面操作之前，我建议你使用typora这个软件来编辑md文件，如果你装好这个软件了，并将其设置为md文件的默认打开软件，输入下面的命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd /Users/zhaohuanan/opt/github/xielabweb_file/source/members</span><br><span class="line">ls</span><br><span class="line"># 同样的，你会看到一个index文件夹和一个同名的md文件</span><br><span class="line">index    index.md</span><br><span class="line">open index.md</span><br></pre></td></tr></table></figure>
+
+<p>typora软件会打开这个文件，目前是这个样子</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9blk2k1qzj30u00y34qp.jpg" alt></p>
+<p>接下来就用到了同名文件夹<code>index</code>，</p>
+<p><code>open index</code></p>
+<p>将一个名为<code>pig.jpeg</code>文件放在这个文件夹（是一只猪头）</p>
+<p>回到typora，使用快捷键command+/，找到<code># Rotating student</code>，你不需要懂html，但是你需要看懂下面这个图</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9blkbun3vj30zs0u0adu.jpg" alt></p>
+<p>从<code>&lt;tr&gt;</code>到<code>&lt;/tr&gt;</code>就是一个区块，含义是一个一行两列的表格，cpoy代码，在赵华男区块和曾埶天区块加入一只猪头区块，</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9blkg54raj30ss0fota8.jpg" alt></p>
+<p>在编号1处，我们导入了之前的<code>index</code>文件夹下的<code>pig.jpeg</code>图片，编号2处，alt是图片标注，编号3处，zoom代表了缩放比例，编号4处更改为新的rotation学生的信息，command+s保存一下，关闭typora和<code>index</code>文件夹，回到terminal，执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
+<p>打开网页查看你添加的小猪</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9blkjup8dj313r0u04b1.jpg" alt></p>
+<p>现在你大概理解编辑我们的网站的方式了，我来解释一下之前的几个命令：</p>
+<p><code>hexo clean</code>，删除上一次发布的网页html文件（路径是<code>xielabweb_file/public</code>）</p>
+<p><code>hexo g</code>或<code>hexo generate</code>，从当前的源代码文件中编译并且发布html文件（路径是<code>xielabweb_file/public</code>），应该理解了吧？</p>
+<p><code>hexo s</code>或<code>hexo sever</code>，占用本地的4000端口，并且提供web服务，也就是用过这个命令之后，只要不终止这个命令，你的计算机就会存在一个网页服务，打开<a href="http://localhost:4000即可查看网页，也就是public文件夹中的文件数据。" target="_blank" rel="noopener">http://localhost:4000即可查看网页，也就是public文件夹中的文件数据。</a></p>
+<p>ok，接下来将你添加的猪删掉，</p>
+<ul>
+<li><code>cd xielabweb_file/source/members/</code></li>
+<li><code>open index.md</code></li>
+<li>删除你添加的内容，保存</li>
+<li><code>hexo clean</code></li>
+<li><code>hexo g</code></li>
+<li><code>hexo s</code></li>
+<li>打开<a href="http://localhost:4000看看是不是删掉了" target="_blank" rel="noopener">http://localhost:4000看看是不是删掉了</a></li>
+</ul>
+<p>现在诸如：</p>
+<ul>
+<li>publication</li>
+<li>project</li>
+<li>contact</li>
+<li>member</li>
+<li>等待标签页</li>
+</ul>
+<p>你应该都会编辑了，也学会了如何插入图片，至于如何<strong>添加文件提供下载</strong>，可以参考我们的网页<a href="https://xielab.org.cn/2019/11/21/Dr-Xie-resume-CN/，它是一个推文，接下来介绍如何发布一个推文" target="_blank" rel="noopener">https://xielab.org.cn/2019/11/21/Dr-Xie-resume-CN/，它是一个推文，接下来介绍如何发布一个推文</a></p>
+<h2 id="step4-添加一个新的post"><a href="#step4-添加一个新的post" class="headerlink" title="step4 添加一个新的post"></a>step4 添加一个新的post</h2><p>现在我们尝试添加一个新的post推文</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;test&quot;</span><br><span class="line">这个命令会在_post文件夹中新建一个test文件夹和一个test.md文件</span><br></pre></td></tr></table></figure>
+
+<p>然后标准输出会告诉你</p>
+<p><code>INFO  Created: ~/opt/github/xielabweb_file/source/_posts/test.md</code></p>
+<p>注：我把源文件放在了这个目录下<code>~/opt/github/</code></p>
+<p>ok，下面我们cd到<code>_post</code>文件夹下，会发现有一个<code>test</code>的文件夹和一个<code>test.md</code>的文件</p>
+<p><code>open test.md</code></p>
+<p>接下来在图形界面完成网页内容的编辑就好了。</p>
+<p>你可以打开<code>Dr-Xie-resume-CN.md</code>这个post，</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9blkpeuvlj30o60d6aax.jpg" alt></p>
+<p>按下command+/查看源代码</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9blkum1iej31300d8jsv.jpg" alt></p>
+<p>然后<code>cd ../download</code>，<code>ls</code>，然后你会发现我们需要提供的下载服务都在这里，以后要添加一下需要下载的文件，如paper的pdf资源，将它放在download文件夹中，在post中引用即可。</p>
+<h1 id="最重要的，同步到github服务"><a href="#最重要的，同步到github服务" class="headerlink" title="最重要的，同步到github服务"></a>最重要的，同步到github服务</h1><p>我们之前了解了怎么编辑网页的源文件，当一切就绪之后执行以下命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line"># 可选，查看有没有错误</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>期间如果出现问题，应该是你的git没有配置好，<a href="https://hermanzhaozzzz.github.io/2019/09/17/Hexoblog/配置-hexo-博客/" target="_blank" rel="noopener">参考我的博客</a></p>
+<p>等待同步完成之后，访问<a href="http://xielab.org.cn/，你会发现，访问出错，404！，这是正常的，我们需要在github的仓库中完成一个更改，打开如图这个仓库（我应该已经给了你contributor权限）" target="_blank" rel="noopener">http://xielab.org.cn/，你会发现，访问出错，404！，这是正常的，我们需要在github的仓库中完成一个更改，打开如图这个仓库（我应该已经给了你contributor权限）</a></p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9bll1mh8xj31jv0u019d.jpg" alt></p>
+<p>打开setting设置，滚动到最下方，在custom domin处填上我们的域名，save，</p>
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6ly1g9bll6ahbnj314b0u0n3l.jpg" alt></p>
+<p>需要缓一会儿，大概一分钟，访问<a href="http://xielab.org.cn/，现在应该可以正常访问了。" target="_blank" rel="noopener">http://xielab.org.cn/，现在应该可以正常访问了。</a></p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>请养成良好的备份习惯，拿到contributor权限之后，慎重操作xielabweb_file这个仓库，这个仓库备份了我们网站的所有源代码文件！有特殊问题，联系我即可~</p>
+<h1 id="Author："><a href="#Author：" class="headerlink" title="Author："></a>Author：</h1><ul>
+<li>赵华男</li>
+<li>E-mail：<a href="mailto:hermanzhaozzzz@gmail.com" target="_blank" rel="noopener">hermanzhaozzzz@gmail.com</a></li>
+<li>Tel：16619954871</li>
+</ul>
 
             </div>
             <hr/>
@@ -506,25 +601,32 @@
                 <i class="far fa-dot-circle"></i>&nbsp;Current
             </div>
             <div class="card">
-                <a href="/intranet/index.html">
+                <a href="/intranet/protocol/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="intranet">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="protocol to maintain this website">
                         
-                        <span class="card-title">intranet</span>
+                        <span class="card-title">protocol to maintain this website</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CalendarProtocol
+                            
+网页状况简介：
+整体方案是hexo + github + 个人域名转发
 
+Hexo 环境的配置参考我的博客
+本教程是在mac环境下写的：
+按照博客中的方法配置好npm和hexo
+可以尝试自己搭建一个blog试试水。
+在没有配置域名的情况下
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-26
                             </span>
                         <span class="publish-author">
                             
@@ -553,25 +655,32 @@
                 Current&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/intranet/index.html">
+                <a href="/intranet/protocol/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="intranet">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="protocol to maintain this website">
                         
-                        <span class="card-title">intranet</span>
+                        <span class="card-title">protocol to maintain this website</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CalendarProtocol
+                            
+网页状况简介：
+整体方案是hexo + github + 个人域名转发
 
+Hexo 环境的配置参考我的博客
+本教程是在mac环境下写的：
+按照博客中的方法配置好npm和hexo
+可以尝试自己搭建一个blog试试水。
+在没有配置域名的情况下
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-26
                             </span>
                         <span class="publish-author">
                             
