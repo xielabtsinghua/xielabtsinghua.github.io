@@ -114,17 +114,6 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>Archives</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
     <a href="/intranet" class="waves-effect waves-light">
       
       <i class="fas fa-archive" style="zoom: 0.6;"></i>
@@ -238,17 +227,6 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			Archives
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
 		<a href="/intranet" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-archive"></i>
@@ -336,13 +314,6 @@
 
 <div id="page" class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
     
-    <div id="prev-cover" class="left waves-effect carousel-control">
-        <i class="icon fas fa-angle-left"></i>
-    </div>
-    <div id="next-cover" class="right waves-effect carousel-control">
-        <i class="icon fas fa-angle-right"></i>
-    </div>
-    
 
     <div class="carousel-item red white-text bg-cover about-cover">
         <div class="container" style="right: 0px;left: 0px;">
@@ -411,32 +382,6 @@
     </div>
 
     
-    
-
-    
-    
-    <div class="carousel-item amber white-text carousel-post bg-cover"
-            style="background-image: url('/images/1.jpg');">
-        <div class="container" style="right: 0px;left: 0px;">
-            <div class="row">
-                <div class="col s10 offset-s1">
-                    <div class="title center-align">INTERESTS</div>
-                    <div class="description center-align">
-                    
-                        <font color=red>We focus on&#58; </font><p> </p><div align="left"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Epigenetic regulation during the early development of animal embryos;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Epigenetic regulation during stem cell differentiation;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. the function of regulatory sequences such as promoters, enhancers, insulators, and three-dimensional genomes <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in development and cell fate determination;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Regulation mechanism of epigenetic related human diseases.</p></div>
-                    
-                    </div>
-                    <div class="cover-btns">
-                        <a href="/2019/11/05/interests/" class="waves-effect waves-light btn" target="_blank">
-                            <i class="icon far fa-eye fa-fw"></i>Read more
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
 </div>
 
 <script>
@@ -445,24 +390,13 @@ $(function () {
     coverSlider.carousel({
         duration: Number('0'),
         fullWidth: true,
-        indicators: 'true' === 'true'
+        indicators: 'false' === 'true'
     });
 
     let carouselIntervalId;
     
-    // Loop to call the next cover article picture.
-    let autoCarousel = function() {
-        carouselIntervalId = setInterval(function () {
-            coverSlider.carousel('next');
-        }, 13000);
-    };
-    autoCarousel();
-    
 
     let restartPlay = function () {
-        
-        clearInterval(carouselIntervalId);
-        autoCarousel();
         
     };
 
@@ -489,6 +423,19 @@ $(function () {
         <div class="container ">
             <div class="card">
                 <div class="card-content">
+                    
+                        <div class="dream">
+    
+    <div class="title center-align">
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;<font color=black font size="8">Major Research Interests&#58; </font><div align="left"><p><font size="4">Our lab is interested in understanding epigenetic regulation of transcription in the mammalian genome that governs development and related human diseases.For this purpose we use a variety of methods in molecular biology, developmental biology, genomics and bioinformatics.By combining “wet” lab and “dry” lab, we aim to decipher the mechanisms underlying a number of key biological processes including:</font></p><p><font size="4"><p></p>(1) epigenetic regulation of early animal development mediated by DNA methylation and chromatin modifications;</font></p><p><font size="4">(2) epigenetic regulation of pluripotency and stem cell differentiation;</font></p><p><font size="4">(3) the role of cis-regulatory elements such as enhancers, promoters, insulators and 3D chromatin structure in development and cell fate determination;</font></p><p><font size="4">(4) molecular mechanisms underlying human diseases linked to aberrant epigenetic regulation.</font></p></div>
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
+            
+        </div>
+    </div>
+</div>
                     
 
                     
@@ -600,53 +547,6 @@ $(function () {
                         
                         <a href="/tags/resume/">
                             <span class="chip bg-color">resume</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/11/05/interests/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="INTERESTS">
-                            
-                            <span class="card-title">INTERESTS</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                <font color=red>We focus on&#58; </font><p> </p><div align="left"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Epigenetic regulation during the early development of animal embryos;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Epigenetic regulation during stem cell differentiation;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. the function of regulatory sequences such as promoters, enhancers, insulators, and three-dimensional genomes <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in development and cell fate determination;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Regulation mechanism of epigenetic related human diseases.</p></div>
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/posts/" class="post-category">
-                                    posts
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/interests/">
-                            <span class="chip bg-color">interests</span>
                         </a>
                         
                     </div>
@@ -781,8 +681,6 @@ $(function () {
 
     
 
-    
-    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
     
     
